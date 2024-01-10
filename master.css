@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Rubik', sans-serif;   
+     margin: 0;
+  }
+  *:focus {
+    outline: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  main{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  main::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    left: 0;
+    top: 0;
+    border-radius: 0  0 250px  250px;
+    background-image: linear-gradient( hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+}
+main::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    right: -190px;
+    bottom: 0;
+    border-radius: 290px  290px 0 0 ;
+    background-color:  hsl(270, 20%, 96%);
+}
+@media(max-width:991px){
+    main{
+        flex-direction: column;
+    }
+.phone{
+    margin-right: 275px;
+}
+main::before{
+    height: 50%;
+}
+.text{
+    text-align: center;
+}
+}
+.phone{
+    outline: 10px white solid;
+    border-radius: 20px;
+    margin-left: 249px;
+    background-color:  hsl(270, 20%, 96%);
+    width: 350px;
+    position: relative;
+}
+.phone::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 6%;
+  width: 50%;
+  border-radius: 10px;
+  top: -20px;
+  left: 25%;
+
+}
+
+.phone .top{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient( hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    padding: 10px;
+    padding-top: 20px;
+    color: white;
+}
+.phone .top p{
+    margin: 0;
+}
+.phone .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone .username{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.phone .username  a{
+    font-weight: bold;
+}
+.phone .username  p  {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #ccc;
+}
+.phone .top img{
+  width: 30px;
+  border-radius: 50%;
+  border: 2px white solid;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.phone .content {
+    padding: 5px;
+    position: relative;
+}
+.phone .content span{
+    display: block;
+    margin: 8px 0;
+    padding: 5px;
+    border-radius: 10px;
+    width: 55%;
+    font-size: 13px;
+}
+.phone .content span img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+.phone .content span.main-msg{
+    background-color:  hsl(264, 100%, 91%);
+    color:  hsl(264, 100%, 41%);
+}
+.phone .content span.white{
+    background-color: white;
+    margin: 15px 150px;
+    width: fit-content;
+    margin-right: 0;
+}
+.phone .content span.imgs{
+    background-color: transparent;
+    margin: 10px 170px 0 ;
+    display: flex;
+    margin-right: 0;
+    gap: 5px;
+}
+.phone .content span.sub{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    color: white;
+    background-image: linear-gradient( hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+}
+.phone .content span.sub >span{
+    margin: 0;
+}
+.phone .content span.sub span.dolar{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+.phone .foot{
+    padding: 10px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+}
+.phone .foot  i{
+    background-color:  hsl(271, 36%, 24%);
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.phone .foot input{
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+.text{
+    width: 450px;
+}
+.text  h1{
+    color:  hsl(271, 36%, 24%);
+    font-size: 40px;
+}
+.text  p{
+    color:  hsl(271, 36%, 24%);
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
